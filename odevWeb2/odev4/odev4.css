@@ -1,0 +1,112 @@
+#resim1{
+    position: absolute;
+    left: 370px;
+    top: 0px;
+    border-spacing: 50px;
+}
+#resim2{
+    position: absolute;
+    left: 850px;
+    top: 50px;
+    border-spacing: 50px;
+}
+#anaAlan {
+    display: grid;
+    width: 50vw;
+    height: 75vh;
+    grid-template-areas: 
+    "div div1 div2"
+    "div3 div4 div5"
+    "div6 div7 div7";
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));;
+    gap: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: white;
+    width: 90px;
+    height: 30px;
+    margin-top: 5px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 30px;
+}
+
+main > * {
+    font-family: Copperplate, Papyrus, fantasy;
+    font-size: 1.2em;
+    font-weight: 900;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 5px;
+}
+
+div:nth-child(1) {
+    grid-area: div;
+    background-color: rgb(205, 188, 172);
+}
+
+div:nth-child(2) {
+    grid-area: div1;
+    background-color: rgb(218, 200, 190);
+}
+
+div:nth-child(3) {
+    grid-area: div2;
+    background-color: rgb(240, 235, 229);
+}
+
+div:nth-child(4) {
+    grid-area: div3;
+    background-color: rgb(240, 235, 229);
+}
+
+div:nth-child(5) {
+    grid-area: div4;
+    background-color: rgb(205, 188, 172);
+}
+
+div:nth-child(6) {
+    grid-area: div5;
+    background-color: rgb(218, 200, 190);
+}
+
+div:nth-child(7) {
+    grid-area: div6;
+    background-color: rgb(218, 200, 190);
+}
+
+div:nth-child(8) {
+    grid-area: div7;
+    background-color: rgb(205, 188, 172);
+}
+
+@media (max-width: 600px) {
+    #resim1{
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        border-spacing: 50px;
+    }
+    #resim2{
+        position: absolute;
+        left: 300px;
+        border-spacing: 50px;
+    }
+    #anaAlan {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+    "div"
+    "div1"
+    "div2"
+    "div3"
+    "div4"
+    "div5"
+    "div6"
+    "div7"
+    "div7";
+    }
+}
